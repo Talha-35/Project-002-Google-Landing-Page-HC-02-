@@ -16,6 +16,7 @@
     margin-top: 25px;
     margin-left: 30px;
     word-spacing: 12px;
+    display:inline-block ;
 }
 
 #right-top{
@@ -25,6 +26,10 @@
     word-spacing: 12px;
     display:inline-block ;
     cursor: pointer; 
+}
+
+#icon-head{
+    opacity: 0.7;
 }
 
 header nav a {
@@ -80,11 +85,13 @@ header nav a:hover {
     box-shadow:  0px 0px 2px 2px rgb(238, 235, 235); 
     text-indent: 55px;
     font-size: 15pt;
+    outline: none;
 }
 
 #button-search:hover {
     box-shadow:0px 1px 2px 1px rgb(177, 171, 171);
     border:none;
+    outline: none;
 }
 
 #microphone{
@@ -102,43 +109,47 @@ header nav a:hover {
 }
 
 #button-google{
-    
+    position: relative;
     margin-left: -170px;
     margin-top: 40px;
-    background-color: #f8f8f8;
+    background-color: rgba(207, 203, 203, 0.2);
     font-family: arial,sans-serif;
-    border: 1px solid #c6c6c6;
-    border-radius: 5px;
+    border: hidden;
+    border-radius: 4px;
     font-size: 14px;
     height: 36px;
     width: 150px;
+    opacity: 0.9;
+    outline: none;
+    
 }
 
 #button-google:hover {  
-    border: 0.1px solid rgba(90, 88, 88, 0.3);
-    text-decoration: none;
-    color: black; 
-    border-radius: 2px;
+    color: black;
+    border: 1px solid lightgray;
+    box-shadow: 0.7px 0.7px 0.7px lightgray;
+    cursor: pointer;
 }
 
 #button-lucky{
-    background-color: #f8f8f8;
-    color: ##222;
+    background-color: rgba(207, 203, 203, 0.2);
     font-family: arial,sans-serif;
-    border: 1px solid #c6c6c6;
-    border-radius: 5px;
+    border: hidden;
+    border-radius: 4px;
     font-size: 14px;
     margin-left: 20px;
     margin-top: 0px;  
     height: 36px;
     width: 150px;    
+    opacity: 0.9;
+    outline: none;
 }
 
 #button-lucky:hover {
-    border: 0.1px solid rgba(90, 88, 88, 0.3);
-    text-decoration: none;
-    color: black; 
-    border-radius: 2px;    
+    color: black;
+    border: 1px solid lightgray;
+    box-shadow: 0.7px 0.7px 0.7px lightgray;
+    cursor: pointer;
 }
 
 #language{
@@ -147,13 +158,14 @@ header nav a:hover {
     margin-left: -170px;
     margin-top: 14px; 
     word-spacing: 1px;
+    opacity: 0.9;
 }
 
 #language a:hover {   
     color: black;     
-    text-decoration-line: none;
-    transform: scale(5);
+    text-decoration-line: none;  
 }
+
 footer {
     position: absolute;
     bottom: 20px;    
@@ -162,7 +174,7 @@ footer {
 
 footer nav a {
     text-decoration: none;
-    color: dimgray;
+    color: dimgray;    
     font-size: 12px;      
     color: black;    
 }
@@ -177,7 +189,7 @@ footer nav p {
     display: inline-block;
     position: fixed;
     bottom: 28px;  
-    background-color:rgb(236, 233, 233);
+    background-color:rgb(247, 247, 247);
     width: 100%;
     height: 35px;
     right: -23px;  
@@ -196,7 +208,7 @@ footer nav p {
     display: inline-block;
     position: fixed;
     bottom: 63.6px;
-    background-color:rgb(236, 233, 233);
+    background-color:rgb(247, 247, 247);
     width: 100%;   
     height:35px;
     padding-top: 10px; 
